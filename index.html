@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>premier-sports</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico/oguaa logo.webp">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input[type="submit"], input[type="reset"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+}
+
+input[type="submit"] {
+  background-color: #007bff; /* blue */
+  color: white;
+}
+
+input[type="reset"] {
+  background-color: #e0e0e0; /* light gray */
+  color: black;
+}
+input:focus {
+    outline-color: #007bff;
+}
+input[list]:focus{
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
+}
+div{
+    background-image: url(scaryhours.jpg);
+}
+    </style>
+</head>
+<body>
+    <div>
+   <header>
+    <h1 style="color: rgb(54, 255, 47); background-color: rgba(0, 0, 0, 0);">LEGEND'S SPORTS TEAM</h1>
+   </header>
+   <section>
+     <form action="submit.php" method="post">
+        <caption><b style="color: #e0e0e0;"> kindly fill the form below:</b></caption><br><br>
+        <fieldset>
+        <legend style="font-weight: bold;color: white">PERSONAL INFO</legend><br>
+        <label for="NAME" style="font-weight: bold;">NAME:</label><br>
+        <input type="text" id="NAME" name="NAME" placeholder="SAMUEL_LEGEND" autofocus required> <br><br> 
+        <label for="email" style="font-weight: bold;">EMAIL:</label><br>
+        <input type="email" id="email" name="email" placeholder="asumadusamuel12334@gmail.com" required> <br><br>
+        <label for="contact" style="font-weight: bold;">PHONE NUMBER:</label><br>
+        <input type="tel" id="contact" name="contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="20" placeholder="0538168335" required>
+        <br><br>
+        <label for="major" style="font-weight: bold;">MAJOR SPORTS AREA:</label>
+        <br><br>
+        <input list="SPORTS" name="SPORTS" placeholder="FOOTBALL" required>
+        <datalist id="SPORTS">
+            <option value="FOOTBALL"></option>
+            <option value="BASKETBALL"></option>
+            <option value="VOLLEYBALL"></option>
+            <option value="HOCKEY"></option>
+            <option value="ATHLETE"></option>
+            <option value="HANDBALL"></option>
+        </datalist> <br><br>
+        <label for="minor" style="font-weight: bold;">TICK MINOR SPORTS AREAS:</label><br>
+        <input type="checkbox" id="minor" name="minor">
+        <label for="minor" style="font-weight: bold;">FOOTBALL</label><br>
+        <input type="checkbox" id="minor" name="minor">
+        <label for="minor" style="font-weight: bold;">BASKETBALL</label><br>
+        <input type="checkbox" id="minor" name="minor">
+        <label for="minor" style="font-weight: bold;">VOLLEYBALL</label><br>
+        <input type="checkbox" id="minor" name="minor">
+        <label for="minor" style="font-weight: bold;">HOCKEY</label><br>
+        <input type="checkbox" id="minor" name="minor">
+        <label for="minor" style="font-weight: bold;">ATHLETE</label><br>
+        <input type="checkbox" id="minor" name="minor">
+        <label for="minor" style="font-weight: bold;">HANDBALL</label><br> <br>
+        <p><b>Are you at the diaspora or in the all?</b></p>
+        <input type="radio" id="diaspora" name="diaspora">
+        <label for="diaspora" style="font-weight: bold;">DIASPORA</label><br>
+        <input type="radio" id="hall" name="hall">
+        <label for="hall" style="font-weight: bold;">HALL</label><br><br>
+        <textarea name="message" rows="10" cols="15" placeholder="Write any suggestion here:"></textarea>
+        <br><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        </fieldset>
+     </form>
+   </section>
+</div>
+</body>
+</html>
